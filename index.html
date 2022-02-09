@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Booking Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-header">
+            <h3>Work, Leisure, & Everything in Between</h3>
+            <p>Whoever you are, whatever you seek, it all starts from here</p>
+        </div>
+
+        <hr>
+
+        <div class="form-container">
+            <form action="#" id="form">
+                
+                <div class="form-group destination">
+                    <label for="destination">
+                        Destination, property name or address:
+                    </label>
+                    <input type="text" id="destination" class="form-control" placeholder="Enter the place where you want to go">
+                    <span class="error-msg">This field cannot be empty</span>
+                </div>
+                
+                <div class="check-in-out">
+                    <div class="form-group">
+                        <label for="checkin"> Check-in date:</label>
+                        <div class="form-group form-group-check-in-out">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="text" id="check-in" class="form-control">
+                            <span class="error-msg">This field cannot be empty</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkout"> Check-out date:</label>
+                        <div class="form-group form-group-check-out-out">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="text" id="check-out" class="form-control">
+                            <span class="error-msg">This field cannot be empty</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rooms-adults-children">
+                    <div class="form-group">
+                        <label for="rooms"> Rooms: </label>
+                        <select name="" class="form-control" id="rooms">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adults"> Adults: </label>
+                        <select name="" class="form-control" id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="children"> Children: </label>
+                        <select name="" class="form-control" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                    <div class="form-group">
+                        <label for="travelling"> Travelling for: </label>
+                        <label for="work" class="radio-label">
+                            <input type="radio" name="travel" id="work">
+                            Work
+                        </label>
+                        <label for="leisure" class="radio-label">
+                            <input type="radio" name="travel" id="leisure">
+                            Leisure
+                        </label>
+                        <span class="error-msg">This field cannot be empty</span>
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label for="travelling"> Search for: </label>
+                        <label for="properties" class="radio-label">
+                            <input type="radio" name="search-for" id="properties">
+                            Properties
+                        </label>
+                        <label for="hotels" class="radio-label">
+                            <input type="radio" name="search-for" id="hotels">
+                            Hotels
+                        </label>
+                        <label for="homes" class="radio-label">
+                            <input type="radio" name="search-for" id="homes">
+                            Homes & Apartments
+                        </label>
+                        <span class="error-msg">This field cannot be empty</span>
+                        
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn search-btn">
+                            SEARCH
+                        </button>
+                    </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
